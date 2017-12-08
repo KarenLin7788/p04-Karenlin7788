@@ -117,6 +117,12 @@ int main()
                 cin>>answer;
         }
         while(answer=='Y'||answer=='y');
+
+        ofstream myfile;
+        myfile.open("result.txt");
+        myfile<<"Congratulations, you are a warrior now!";
+        myfile.close();
+
         return 0;
 }
 
